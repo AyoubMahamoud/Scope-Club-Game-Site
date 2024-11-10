@@ -3,8 +3,8 @@ import React, { useState } from 'react';
 export default function Games() {
   const [points, setPoints] = useState(100); // Starting points for the user
   const sampleGames = [
-    { id: 1, name: 'Team A vs Team B', date: 'Nov 12, 2024' },
-    { id: 2, name: 'Team C vs Team D', date: 'Nov 13, 2024' },
+    { id: 1, name: 'Team Deborah vs Team Adit: Who can sing better!', date: 'Nov 11, 2024' },
+    { id: 2, name: 'Team Anay vs Team Joyce: Who can get a higher score on geo dash ', date: 'Nov 11, 2024' },
   ];
 
   const handleBet = (betAmount: number) => {
