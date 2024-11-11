@@ -4,7 +4,7 @@ export default function Games() {
   const [points, setPoints] = useState(100); // Starting points for the user
   const sampleGames = [
     { id: 1, name: 'Team Deborah vs Team Adit: Who can sing better!', date: 'Nov 11, 2024' },
-    { id: 2, name: 'Team Anay vs Team Joyce: Who can get a higher score on geo dash ', date: 'Nov 11, 2024' },
+    { id: 2, name: 'Team Anay vs Team Joyce: Who can get a higher score on geo dash', date: 'Nov 11, 2024' },
   ];
 
   const handleBet = (betAmount: number) => {
@@ -27,8 +27,8 @@ export default function Games() {
             key={game.id}
             className="px-6 py-4 bg-white shadow-lg rounded-lg flex flex-col items-center"
           >
-            <h2 className="text-xl font-bold">{game.name}</h2>
-            <p className="text-gray-500">{game.date}</p>
+            <h2 className="text-xl font-bold text-black">{game.name}</h2>
+            <p className="text-gray-700">{game.date}</p>
             <button
               onClick={() => handleBet(10)} // Betting 10 points for each game
               className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg"
@@ -41,4 +41,5 @@ export default function Games() {
     </div>
   );
 }
+
 
